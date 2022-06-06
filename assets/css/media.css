@@ -1,0 +1,28 @@
+@media (max-width: 576px){
+    #header li, input{
+        display: none;
+    }
+
+    .img{
+        display: none;
+    }
+    .vantegem__title__show{
+        font-size: 1.5em;
+        width: 100% !important;
+    }
+    .contents__banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .split{
+        display: block;
+    }
+    .banner__card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

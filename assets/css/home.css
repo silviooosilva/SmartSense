@@ -1,0 +1,124 @@
+.header__title::after {
+    content: "";
+    width: 0;
+    border: 1px solid #00A8E6;
+    margin-left: 15px;
+}
+
+.header {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 83%;
+}
+
+a {
+    text-decoration-line: none !important;
+}
+
+h3 {
+    font-size: 1.375em !important;
+}
+
+.else {
+    margin-left: 10px;
+}
+
+#avatar__img {
+    width: 11%;
+    margin-left: 5px;
+}
+
+.user__name::after {
+    content: "";
+    width: 0;
+    border: 1px solid rgb(78, 78, 78);
+    position: relative;
+    left: 75px;
+}
+
+.dash__card {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    width: 250px;
+    height: 120px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.075);
+    margin-top: 40px;
+    border-left: 0.25rem solid #00A8E6;
+
+}
+
+.dash__card:hover {
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+
+.cards__dash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.title__card {
+    font-size: 12pt;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.first .title__card {
+    color: #00A8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .title__card {
+    color: #1cc88a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec {
+    border-left: 0.25rem solid #1cc88a;
+}
+
+.terc {
+    border-left: 0.25rem solid #f6c23e;
+}
+
+.terc .title__card {
+    color: #f6c23e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h5 {
+
+    font-size: 21pt !important;
+}
+
+.out {
+    margin-left: 40px;
+    color: #00A8E6;
+    cursor: pointer;
+}
+
+.out:hover {
+    color: rgba(0, 0, 0, 0.075);
+}

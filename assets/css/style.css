@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+:root {
+    /*          CORES       */
+    --first-color: #00384D;
+    --second-color: #00A8E6;
+    --third-color: #0096CC;
+    --forth-color: #173e4d;
+
+    --fif-color: #007099;
+    --main-color: #fff;
+    /*      TYPOGRAFIA     */
+    --bigger: 1.7em;
+    --biggest-font: 1.375em;
+    --large-font: 0.875em;
+    --medium-font: 0.857142857em;
+    --small-font: 0.725em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    /*OR IBM PLEX -> POR ACRESCENTAR!*/
+}
+
+::-webkit-scrollbar {
+    color: var(--second-color);
+    background-color: var(--second-color);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*HEADER*/
+#header .container {
+    height: 100%;
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.header__shadow {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.header__title {
+    font-size: var(--biggest-font);
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+#header li {
+    list-style: none;
+    font-size: var(--medium-font);
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px;
+
+    font-size: var(--small-font);
+    cursor: pointer;
+    transition: .4s ease-in;
+    color: var(--first-color);
+}
+
+.nav__contents__li:hover {
+    color: var(--second-color);
+}
+
+#header input {
+    cursor: pointer;
+}
+
+.btn__nav__first {
+    /*background-color: var(--first-color);*/
+    background-color: var(--main-color);
+    color: var(--second-color);
+    font-size: var(--small-font);
+    padding: 5.5px;
+    border: none;
+    border: 1px solid var(--second-color);
+    width: 60px;
+    border-radius: 3px;
+    transition: .4s ease-in;
+
+}
+
+.btn__nav__sec {
+    border: none;
+    background-color: var(--third-color);
+    color: var(--main-color);
+    font-size: var(--small-font);
+    padding: 5.5px;
+    border-radius: 3px;
+
+}
+
+.btn__nav__first:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+
+}
+
+.btn__nav__sec:hover {
+    opacity: 90%;
+}
+
+/*         CONTAINER          */
+
+/*****************************/
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.img {
+    width: 50%;
+}
+
+.split {
+    width: 30%;
+}
+
+/*      PRIMEIRO SERVIÇO    */
+.home .container {
+    margin-top: 80px;
+}
+
+.servico__title {
+    overflow-wrap: break-word;
+    inline-size: 280px;
+    font-size: var(--bigger);
+    font-weight: 600;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao__first {
+    color: var(--forth-color);
+    overflow-wrap: break-word;
+    inline-size: 210px;
+    margin-top: 12px;
+    font-size: var(--medium-font);
+}
+
+.btn__servico {
+    margin-top: 20px;
+    width: 50%;
+    font-size: var(--small-font);
+    border: none;
+    padding: 6px;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* BANNER */
+
+
+.banner__vantagens__servicos {
+    background-color: var(--third-color);
+
+}
+
+.contents__banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vantegem__title__show {
+    text-align-last: center;
+    width: 100%;
+    color: var(--main-color);
+    font-size: var(--bigger);
+    text-transform: uppercase;
+
+}
+
+.card {
+    background-color: var(--main-color);
+    text-align: center;
+    border-radius: 8px;
+    width: 210px;
+    height: 150px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.075);
+}
+
+.card .card__title {
+    color: var(--main-color);
+    background-color: var(--fif-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card .card__content {
+    color: var(--first-color);
+}
+
+
+
+/*SEGUNDO SERVIÇO*/
+
+.view__servicos__sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servico__title__sec {
+    overflow-wrap: break-word;
+    inline-size: 300px;
+    font-size: var(--bigger);
+    font-weight: 600;
+}
+
+.descricao__sec {
+    color: var(--forth-color);
+    overflow-wrap: break-word;
+    margin-top: 12px;
+    font-size: var(--medium-font);
+
+}
+
+.img__sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*TERCEIRO SERVIÇO*/
+.view__servicos__terc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+}
+
+.servico__title__terc {
+    font-size: var(--bigger);
+    font-weight: 600;
+    overflow-wrap: break-word;
+    inline-size: 300px;
+}
+
+.descricao__terc {
+    color: var(--forth-color);
+    overflow-wrap: break-word;
+    margin-top: 12px;
+    font-size: var(--medium-font);
+    inline-size: 200px;
+}
+
+/* BANNER SHOW SERVIÇOS */
+
+
+.banner__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.split {
+    position: relative;
+    left: 50px;
+}
+
+.title {
+    margin-top: 30px;
+    text-align-last: center;
+    font-size: var(--biggest-font);
+    font-weight: 600;
+}
+
+.desc {
+    display: flex;
+    text-align-last: center;
+    font-size: var(--medium-font);
+    color: var(--forth-color);
+    margin-top: 15px;
+}
+
+/*FOOTER*/
+
+
+hr {
+    opacity: 35%;
+}
+
+.bar__contents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3 {
+    color: var(--second-color);
+}
+
+footer p {
+    color: var(--forth-color);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+footer p:hover {
+
+    color: var(--second-color);
+}
